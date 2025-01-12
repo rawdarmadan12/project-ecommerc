@@ -87,7 +87,7 @@ body {
 .product-card img {
   max-height: 250px ;
   /* min-height: 250px !important; */
-  width: 100%;
+  width: 50%;
   object-fit: cover;
   margin-bottom: 15px;
   border-radius: 10px;
