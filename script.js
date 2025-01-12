@@ -12,8 +12,8 @@ const cartCheckoutButton = document.getElementById('cartCheckoutButton'); // Ø²Ø
 async function fetchProducts() {
   const response = await fetch(API_URL);
   const products = await response.json();
-  const filteredProducts = products.filter(product => 
-    product.category === "women's clothing" || product.category === "jewelery"
+  const filteredProducts = products.filter(product =>
+    product.category === "women's clothing" && product.image
   );
   displayProducts(filteredProducts.slice(0, 20)); 
 }
