@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="navbar navbar-expand-lg navbar-light bg-pink fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">Dans</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Shop</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <button class="btn btn-light me-3" id="searchButton">
+            <i class="fas fa-search"></i>
+          </button>
+          <button id="cartButton" class="btn btn-light">
+            <i class="fas fa-shopping-cart"></i> Cart <span id="cartCount" class="badge bg-secondary">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero text-center">
+    <div class="container">
+      <h1>New Collection!</h1>
+      <p>Trending from women's style collection</p>
+      <a href="#products" class="btn btn-pink">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="products" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Collection</h2>
+      <div class="row" id="productList"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row text-white">
+        <div class="col-md-6">
+          <h4>EXCELLENT SUPPORT</h4>
+          <p>We love our customers and they can reach us any time of day; we will be at your service 24/7.</p>
+          <button class="btn btn-pink">Contact</button>
+        </div>
+        <div class="col-md-6">
+          <form class="email-subscription">
+            <input type="email" placeholder="Email Address" class="form-control">
+            <button class="btn btn-pink">Send</button>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-4 text-white">
+        <div class="col-md-6">
+          <h5>INFORMATION</h5>
+          <ul class="list-unstyled">
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>Term & Conditions</li>
+            <li>Shipping Guide</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>USEFUL LINK</h5>
+          <ul class="list-unstyled">
+            <li>Online Store</li>
+            <li>Customer Services</li>
+            <li>Promotion</li>
+            <li>Top Brands</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center text-white mt-4">
+        <p>Follow us:</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul id="cartItems" class="list-group"></ul>
+        </div>
+        <div class="modal-footer">
+          <p>Total: $<span id="cartTotal">0.00</span></p>
+          <button id="cartCheckoutButton" class="btn btn-success">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

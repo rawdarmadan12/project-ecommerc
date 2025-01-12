@@ -1,0 +1,246 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.hero {
+  background: url('https://img.freepik.com/free-photo/young-girl-with-pink-hairs-going-from-shopping_114579-17775.jpg?t=st=1736291981~exp=1736295581~hmac=1b9d8120d4d1a7fa609422856d092d85456d6d12056edeb0a4334a97747e4049&w=1480') no-repeat center center/cover;
+  padding: 120px 0;  
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); 
+  background-size: cover;  
+  background-position: center center;
+  min-height: 600px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 4rem;  
+  font-weight: bold;
+  z-index: 1;
+}
+
+.hero p {
+  font-size: 1.5rem; 
+  z-index: 1;
+}
+
+/*
+.btn-pink {
+  background-color: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: #ff1493;
+  transform: translateY(-5px);
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ff69b4;
+}
+
+.navbar .nav-link {
+  color: white;
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+.navbar .nav-link:hover {
+  color: #ff1493;
+}
+
+.navbar .navbar-toggler-icon {
+  background-color: white;
+}
+
+/* تحسين تصميم بطاقة المنتج */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  height: 600px;
+  /* max-height: 250px !important; */
+  /* min-height: 250px !important; */
+  padding: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-height: 250px ;
+  /* min-height: 250px !important; */
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.product-card p {
+  font-size: 1.1rem;
+}
+
+.product-card .btn-pink {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card .btn-pink:hover {
+  background-color: #ff1493;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  padding: 40px 0;
+  color: white;
+}
+
+.footer .btn-pink {
+  background-color: #ff69b4;
+  border: none;
+}
+
+.footer .btn-pink:hover {
+  background-color: #ff1493;
+}
+
+.footer ul li {
+  color: #bbb;
+}
+
+.footer .social-icons a {
+  color: #ff69b4;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.footer .social-icons a:hover {
+  color: #ff1493;
+}
+
+/* Cart Modal */
+#cartModal .modal-content {
+  padding: 20px;
+}
+
+#cartModal .modal-header {
+  background-color: #ff69b4;
+  color: white;
+}
+
+#cartModal .modal-body {
+  background-color: #f8f9fa;
+}
+
+#cartModal .modal-footer {
+  background-color: #f1f1f1;
+}
+
+#cartModal .btn-pink {
+  background-color: #ff69b4;
+  border: none;
+}
+
+#cartModal .btn-pink:hover {
+  background-color: #ff1493;
+}
+
+/* تخصيص زر سلة التسوق */
+#cartButton {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+#cartButton:hover {
+  background-color: #ff1493;
+}
+
+#cartButton i {
+  margin-right: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* تخصيص التصميم للهواتف الصغيرة */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .product-card {
+    margin-bottom: 20px;
+  }
+
+  .product-card img {
+    max-height: 200px;
+  }
+
+  .product-card h5 {
+    font-size: 1.1rem;
+  }
+
+  .product-card p {
+    font-size: 1rem;
+  }
+}
+
+/* تخصيص زر النجاح */
+.btn-success {
+  background-color:#28a745;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  transform: translateY(-5px);
+}
+ 
+
